@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+    <ScrollView>
+        
+    <StackLayout>
+            <StackLayout>
+                <Entry x:Name="textBox" IsReadOnly="True"></Entry>
+            </StackLayout>
+
+          <Frame>  
+              
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.5*"></RowDefinition>
+                <RowDefinition Height="1.5*"></RowDefinition>
+                <RowDefinition Height="1.5*"></RowDefinition>
+                <RowDefinition Height="1.5*"></RowDefinition>
+                <RowDefinition Height="1.5*"></RowDefinition>
+                <RowDefinition Height="1.5*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Button Clicked="Check_Button" Text="C" BackgroundColor="WhiteSmoke"  Grid.Column="0" Grid.Row="0" CornerRadius="50"></Button>
+                    <Button Clicked="Check_Button" Text="," BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="1" Grid.Row="0" ></Button>
+                    <Button Clicked="Check_Button" Text="/" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="2" Grid.Row="0" ></Button>
+                    <Button Clicked="Check_Button" Text="*" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="0" Grid.Row="1"></Button>
+                    <Button Clicked="Check_Button" Text="-" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="1" Grid.Row="1"></Button>
+                    <Button Clicked="Check_Button" Text="+" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="2" Grid.Row="1"></Button>
+                    <Button Clicked="Check_Button" Text="9" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="0" Grid.Row="2"></Button>
+                    <Button Clicked="Check_Button" Text="8" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="1" Grid.Row="2"></Button>
+                    <Button Clicked="Check_Button" Text="7" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="2" Grid.Row="2"></Button>
+                    <Button Clicked="Check_Button" Text="6" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="0" Grid.Row="3"></Button>
+                    <Button Clicked="Check_Button" Text="5" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="1" Grid.Row="3"></Button>
+                    <Button Clicked="Check_Button" Text="4" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="2" Grid.Row="3"></Button>
+                    <Button Clicked="Check_Button" Text="3" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="0" Grid.Row="4"></Button>
+                    <Button Clicked="Check_Button" Text="2" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="1" Grid.Row="4"></Button>
+                    <Button Clicked="Check_Button" Text="1" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="2" Grid.Row="4"></Button>
+                    <Button Clicked="Check_Button" Text="0" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="0" Grid.Row="5"></Button>
+                    <Button Clicked="Check_Button" Text="000" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="1" Grid.Row="5"></Button>
+                    <Button Clicked="Check_Button" Text="=" BackgroundColor="WhiteSmoke" CornerRadius="50" Grid.Column="2" Grid.Row="5"></Button>
+            
+        </Grid>
+        </Frame>
+    </StackLayout>
+</ScrollView>
+</ContentPage>
